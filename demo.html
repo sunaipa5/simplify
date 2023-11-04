@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpss Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark center mvp-80" id="body">
+    <nav class="navbar">
+        <div class="navl">
+            <h1>Simpss</h1>
+        </div>
+        <div class="navr">
+            <button class="btnf" onclick="toggleTheme()">
+                <svg id="dark" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#111" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                  </svg>
+                <svg id="light" style="display:none;"; xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="#999" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                </svg></button>
+            <ul>
+                <a href="index.html">
+                    <li>Main</li>
+                </a>
+                <a href="demo.html">
+                    <li>Demo</li>
+                </a>
+            </ul>
+        </div>
+
+    </nav>
+
+<main>
+    <br>
+    <div class="conzone hfit">
+    <div class="con con-smx">
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+        <h5>Header 5</h5>
+        <h6>Header 6</h6>
+    </div>
+    <div class="con con-smx">
+        <h2>Login</h2>
+            <input class="fit" type="text" placeholder="Username">
+            <input class="fit" type="password" placeholder="Password">
+            <br>
+            <div class="btna">
+            <input class="btn-md btb flr" type="submit" value="Submit">
+            </div> 
+    </div>
+</div>
+  <br>
+    
+ <div class="conzone center">
+    <div class="con con-sm fluidh">
+        <input type="text" class="fit" placeholder="Text...">
+        <textarea style="resize:none;" class="fit" rows="10" placeholder="Plaintext..."></textarea>
+        <div class="btna">
+            <button class="btn-md btr">Red</button>
+            <button class="btn-md btg">Green</button>
+            <button class="btn-md btb">Blue</button>
+        </div>
+    </div>
+    <div class="con con-smx">
+        <h2>Buttons</h2>
+        <h3>Small Button</h3>
+        <button class="btn-sm btr">Red</button>
+        <button class="btn-sm btg">Green</button>
+        <button class="btn-sm btb">Blue</button>
+        <br>
+        <button class="btn-sm btor">Red</button>
+        <button class="btn-sm btog">Green</button>
+        <button class="btn-sm btob">Blue</button>
+        <br>
+        <h3>Medium Button</h3>
+        <button class="btn-md btr">Red</button>
+        <button class="btn-md btg">Green</button>
+        <button class="btn-md btb">Blue</button>
+        <br>
+        <button class="btn-md btor">Red</button>
+        <button class="btn-md btog">Green</button>
+        <button class="btn-md btob">Blue</button>
+        <br>
+        <h3>Large Button</h3>
+        <button class="btn-lg btr">Red</button>
+        <button class="btn-lg btg">Green</button>
+        <button class="btn-lg btb">Blue</button>
+        <br>
+        <button class="btn-lg btor">Red</button>
+        <button class="btn-lg btog">Green</button>
+        <button class="btn-lg btob">Blue</button>
+    </div>
+</div>
+<br>
+<div class="conzone hfit">
+   
+    <div class="con con-smx">
+        <h2>Container Small</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="con con-mdx">
+        <h2>Container Medium</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="con con-lgx">
+        <h2>Container Large</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  
+    <div class="con con-xlx">
+        <h2>Container XLarge</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+
+    <div class="con con-xxlx">
+        <h2>Container XXLarge</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+</div>
+    
+ <br>
+<div class="con con-md">
+    <table class="center">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Adam</td>
+          <td>Smith</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>Luis</td>
+          <td>Anderson</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Henry</td>
+          <td>Milleston</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Jack</td>
+          <td>Reacher</td>
+          <td>40</td>
+        </tr>
+      </table>
+    </div>
+    
+</main>
+    
+
+</body>
+<script src="script.js"></script>
+
+</html>
