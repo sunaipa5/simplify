@@ -134,7 +134,7 @@ textarea:focus {
 
 
 .navbar {
-    width: 100vw;
+    width:100vw;
     display: inline-flex;
     position: sticky;
     padding: 10px;
@@ -149,7 +149,6 @@ textarea:focus {
 footer{
     width: 100vw;
     margin-top:20px;
-    padding: 10px;
     align-items: center;
     bottom: 0;
     right: 0;
