@@ -5,44 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simpss</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .light .welcome {
-            background-color: #f4f5f6;
-        }
-
-        .dark .welcome {
-            background-color: #111;
-        }
-
-        .welcome {
-            background-repeat: no-repeat;
-            width: 100vw;
-            padding: 15rem 0px;
-            position: relative;
-            overflow: hidden;
-
-        }
-    </style>
+    <link rel="stylesheet" href="simpss/simpss-1.0-min.css">
+    <link rel="stylesheet" href="styles/prism.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body class="dark center" id="body">
     <nav class="navbar">
         <div class="navl">
-            
-                <img src="logo.png" class="navi">
+            <h1>Simpss</h1>
+        </div>
 
-        </div>
-        <div>
-            <span style="font-size:23px; margin-left:3px; font-weight:600;">impss</span>
-        </div>
         <div class="navr">
             <button class="btnf" onclick="toggleTheme()">
-                <svg id="dark" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#111" class="bi bi-moon-fill" viewBox="0 0 16 16">
-                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-                  </svg>
-                <svg id="light" style="display:none;"; xmlns="http://www.w3.org/2000/svg" width="16"
-                    height="16" fill="#999" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                <svg id="dark" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="#111" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                </svg>
+                <svg id="light" style="display:none;" ; xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="#999" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
                     <path
                         d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
                 </svg></button>
@@ -59,39 +42,376 @@
 
     </nav>
     <div class="welcome tx-cen">
-
-        <h1>The Simpss Framework</h1>
-        <h3>Simple CSS Framework</h3>
-
-
+        <div class="weltext">
+            <h1>Simpss Framework</h1>
+            <h3>The Simple CSS Framework</h3>
+        </div>
 
     </div>
-    <div class="conzone mvp-90 center">
-        <div class="con con-xxl">
-            <h2>Why Simpss?</h2>
-            <p>Simpss is a CSS framework that champions simplicity and minimalism above all else. In a world where
-                complexity can often lead to confusion, we believe in the beauty of simplicity. Simpss provides a clean
-                and straightforward foundation for your web projects, allowing you to focus on your content and design
-                without unnecessary bloat. With its lightweight and intuitive structure, Simpss is the ideal choice for
-                those who value clean and elegant web development.</p>
-        </div>
-        <br>
-        <div class="con">
-            <h2>Get started</h2>
-            <div class="con">
-              <h3>CDN</h3>
-              <code>copy</code>
+    <main class="mvp-80 center">
+        <div class="container center">
+            <div class="col col-xlx">
+                <h2>Why Simpss?</h2>
+                <p>Simpss is a CSS framework that champions simplicity and minimalism above all else. In a world where
+                    complexity can often lead to confusion, we believe in the beauty of simplicity. Simpss provides a
+                    clean
+                    and straightforward foundation for your web projects, allowing you to focus on your content and
+                    design
+                    without unnecessary bloat. With its lightweight and intuitive structure, Simpss is the ideal choice
+                    for
+                    those who value clean and elegant web development.</p>
             </div>
-            <div class="con">
-                <h3>Download</h3>
-                <a href="">simpss-compressed.min.css</a>
+            <br>
+            <div class="col col-xlx">
+                <h2>Get started</h2>
+                <div class="col">
+                    <a href="" class="vex hover" style="padding:3px;">simpss-compressed.min.css
+                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                            <path
+                                d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+                        </svg></a>
+                    <br>
+                    <a href="" class="vex hover" style="padding:3px;">simpss-uncompressed.css<svg class="svg"
+                            xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-link-45deg" viewBox="0 0 16 16">
+                            <path
+                                d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                            <path
+                                d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+                        </svg>
+                    </a>
+                    <br>
+                    <a href="" class="vex hover" style="padding:3px;">simpss-toggle-theme.js<svg class="svg"
+                            xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-link-45deg" viewBox="0 0 16 16">
+                            <path
+                                d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                            <path
+                                d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+                        </svg>
+                    </a>
+                    <br>
+                    <a href="" class="vex hover" style="padding:3px;">simpss-all.zip<svg class="svg"
+                            xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-link-45deg" viewBox="0 0 16 16">
+                            <path
+                                d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                            <path
+                                d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+            <br>
+            <div class="col col-xlx">
+                <h1>Docs</h1>
+                <div class="row">
+                    <h2>Starter template</h2>
+
+                    <pre>
+                        <code class="language-html">
+&lt;!DOCTYPE html&gt; 
+&lt;html lang="en"&gt; 
+&lt;head&gt; 
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Simpss&lt;/title&gt;
+    &lt;link rel="stylesheet" href="simpss.min.css"&gt;
+&lt;/head&gt; 
+&lt;body class="light"&gt; 
+    &lt;nav class="navbar"&gt; 
+        &lt;div class="navl"&gt; 
+         &lt;h1&gt;Simpss&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;div class="navr"&gt;
+         &lt;ul&gt;
+          &lt;a href="index.html"&gt; 
+           &lt;li&gt;Homepage&lt;/li&gt;
+          &lt;/a&gt; 
+          &lt;a href="about.html"&gt;
+           &lt;li&gt;About&lt;/li&gt;
+          &lt;/a&gt;
+         &lt;/ul&gt; 
+        &lt;/div&gt; 
+    &lt;/nav&gt; 
+&lt;main class="mvp-80 center"&gt;
+    &lt;div class="container"&gt;
+      &lt;div class="col col-xlx"&gt;
+        &lt;h2&gt;My First container&lt;/h2&gt;
+      &lt;/div&gt; 
+    &lt;/div&gt;
+&lt;/main&gt; 
+&lt;/body&gt; 
+&lt;/html&gt;
+</code>
+                    </pre>
+
+                </div>
                 <br>
-                <a href="">simpss-uncompressed.css</a>
+                <div class="row">
+
+                    <h2>Theme</h2>
+                    <div class="col">
+                        <h3>Dark</h3>
+                        <pre>
+                        <code class="language-html">
+&lt;body class="dark"&gt;
+                            
+&lt;/body&gt;
+                    </code>
+                    </pre>
+                        <button class="btn-md btb flr" onclick="ctheme('dark')">Test Dark</button>
+                    </div>
+                    <div class="col">
+                        <h3>Light</h3>
+                        <pre>
+                        <code class="language-html">
+&lt;body class="light"&gt;
+                            
+&lt;/body&gt;
+                    </code>
+                    </pre>
+                        <button class="btn-md btb flr" onclick="ctheme('light')">Test Light</button>
+                    </div>
+                    <div class="col">
+                        <h3>Toggle</h3>
+                        <pre>
+                            <code class="language-html">
+    &lt;body class="light"&gt;
+     &lt;button class="btn-md btb" onclick="toggleTheme()"&gt;Toggle&lt;/button&gt;                   
+    &lt;/body&gt;
+                        </code>
+                        </pre>
+                        <button class="btn-md btb flr" onclick="toggleTheme()">Toggle</button>
+
+                    </div>
+                </div>
+                <div>
+
+                    <br>
+
+                    <h3>Toggle Theme JS</h3>
+                    <pre style="max-height:500px;">
+                        <code class="language-js"> 
+  function toggleTheme() {
+    const body = document.getElementsByTagName("body")[0];
+    if (body.classList.contains("dark")) {
+        body.classList.remove("dark");
+        body.classList.add("light");
+        document.getElementById("dark").style.display = "block";
+        document.getElementById("light").style.display = "none";
+        localStorage.setItem("theme", "light");
+    } else if (body.classList.contains("light")) {
+        body.classList.remove("light");
+        body.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+        document.getElementById("dark").style.display = "none";
+        document.getElementById("light").style.display = "block";
+    } else {
+        body.classList.remove("dark", "light");
+        body.classList.add("light");
+        localStorage.setItem("theme", "light");
+    }
+}
+
+window.onload = function() {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.getElementById("body").classList.add("dark");
+        document.getElementById("body").classList.remove("light");
+        document.getElementById("dark").style.display = "none";
+        document.getElementById("light").style.display = "block";
+    } else {
+        document.getElementById("body").classList.add("light");
+        document.getElementById("body").classList.remove("dark");
+        document.getElementById("dark").style.display = "block";
+        document.getElementById("light").style.display = "none";
+    }
+};
+
+                        </code>
+                    </pre>
+
+                </div>
+
+                <br>
+                <div class="">
+
+                    <h2>Buttons</h2>
+                    <div class="row">
+                        <h3>Small Button</h3>
+                        <button class="btn-sm btr">Red</button>
+                        <button class="btn-sm btg">Green</button>
+                        <button class="btn-sm btb">Blue</button>
+                        <br>
+                        <button class="btn-sm btor">Red</button>
+                        <button class="btn-sm btog">Green</button>
+                        <button class="btn-sm btob">Blue</button>
+                        <br>
+                        <pre>
+                            <code class="language-html">
+&lt;h3&gt;Small Button&lt;/h3&gt;
+&lt;button class="btn-sm btr"&gt;Red&lt;/button&gt;
+&lt;button class="btn-sm btg"&gt;Green&lt;/button&gt;
+&lt;button class="btn-sm btb"&gt;Blue&lt;/button&gt;
+&lt;br&gt;
+&lt;button class="btn-sm btor"&gt;Red&lt;/button&gt;
+&lt;button class="btn-sm btog"&gt;Green&lt;/button&gt;
+&lt;button class="btn-sm btob"&gt;Blue&lt;/button&gt;
+                            </code>
+                        </pre>
+                        <h3>Medium Button</h3>
+                        <button class="btn-md btr">Red</button>
+                        <button class="btn-md btg">Green</button>
+                        <button class="btn-md btb">Blue</button>
+                        <br>
+                        <button class="btn-md btor">Red</button>
+                        <button class="btn-md btog">Green</button>
+                        <button class="btn-md btob">Blue</button>
+                        <br>
+                        <pre>
+                            <code class="language-html">
+&lt;h3&gt;Medium Button&lt;/h3&gt;
+&lt;button class="btn-md btr"&gt;Red&lt;/button&gt;
+&lt;button class="btn-md btg"&gt;Green&lt;/button&gt;
+&lt;button class="btn-md btb"&gt;Blue&lt;/button&gt;
+&lt;br&gt;
+&lt;button class="btn-md btor"&gt;Red&lt;/button&gt;
+&lt;button class="btn-md btog"&gt;Green&lt;/button&gt;
+&lt;button class="btn-md btob"&gt;Blue&lt;/button&gt;
+                            </code>
+                        </pre>
+                        <h3>Large Button</h3>
+                        <button class="btn-lg btr">Red</button>
+                        <button class="btn-lg btg">Green</button>
+                        <button class="btn-lg btb">Blue</button>
+                        <br>
+                        <button class="btn-lg btor">Red</button>
+                        <button class="btn-lg btog">Green</button>
+                        <button class="btn-lg btob">Blue</button>
+                        <br>
+                        <pre>
+                            <code class="language-html">
+&lt;h3&gt;Large Button&lt;/h3&gt;
+&lt;button class="btn-lg btr"&gt;Red&lt;/button&gt;
+&lt;button class="btn-lg btg"&gt;Green&lt;/button&gt;
+&lt;button class="btn-lg btb"&gt;Blue&lt;/button&gt;
+&lt;br&gt;
+&lt;button class="btn-lg btor"&gt;Red&lt;/button&gt;
+&lt;button class="btn-lg btog"&gt;Green&lt;/button&gt;
+&lt;button class="btn-lg btob"&gt;Blue&lt;/button&gt;
+                            </code>
+                        </pre>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="con">
+                        <h2>Inputs</h2>
+                        <h3>Small</h3>
+                        <input class="fit" type="text" placeholder="Text">
+                        <pre style="width:408px;">
+            <code class="language-html">
+&lt;input class="fit" type="text" placeholder="Text"&gt;</code>
+        </pre>
+                        <h3>Medium</h3>
+                        <input class="fit inp-md" type="text" placeholder="Text">
+                        <pre style="width:408px;">
+            <code class="language-html" >
+&lt;input class="fit inp-md" type="text" placeholder="Text"&gt;</code>
+        </pre>
+                        <h3>Large</h3>
+                        <input class="fit inp-lg" type="text" placeholder="Text">
+                        <pre style="width: 408px;">
+            <code class="language-html">
+&lt;input class="fit inp-lg" type="text" placeholder="Text"&gt;</code>
+        </pre>
+                        <h3>Textarea</h3>
+                        <textarea style="resize:none;" class="fit" rows="10" placeholder="Plaintext..."></textarea>
+                        <pre>
+        <code class="language-html">
+&lt;textarea style="resize:none;" class="fit" rows="10" placeholder="Plaintext..."&gt;&lt;/textarea&gt;</code>
+        </pre>
+
+                    </div>
+                    <div class="row">
+                        <h2>Containers</h2>
+                        <a href="demo.html">
+                            <button class="btnf btb">
+                                <h3>Visit Demo Page</h3>
+                            </button>
+                        </a>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h2>Tabel</h2>
+                        <table class="center">
+                            <tbody>
+                                <tr>
+                                    <th>Firstname</th>
+                                    <th>Lastname</th>
+                                    <th>Age</th>
+                                </tr>
+                                <tr>
+                                    <td>Adam</td>
+                                    <td>Smith</td>
+                                    <td>21</td>
+                                </tr>
+                                <tr>
+                                    <td>Luis</td>
+                                    <td>Anderson</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>Henry</td>
+                                    <td>Milleston</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>Jack</td>
+                                    <td>Reacher</td>
+                                    <td>40</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <pre> 
+<code class="language-html">&#x3C;table class=&#x22;center&#x22;&#x3E;
+ &#x3C;tbody&#x3E;
+  &#x3C;tr&#x3E;
+    &#x3C;th&#x3E;Firstname&#x3C;/th&#x3E;
+    &#x3C;th&#x3E;Lastname&#x3C;/th&#x3E;
+    &#x3C;th&#x3E;Age&#x3C;/th&#x3E;
+  &#x3C;/tr&#x3E;
+  &#x3C;tr&#x3E;
+    &#x3C;td&#x3E;Adam&#x3C;/td&#x3E;
+    &#x3C;td&#x3E;Smith&#x3C;/td&#x3E;
+    &#x3C;td&#x3E;21&#x3C;/td&#x3E;
+  &#x3C;/tr&#x3E;
+ &#x3C;/tbody&#x3E;
+&#x3C;/table&#x3E;</code>
+                          </pre>
+                    </div>
+                </div>
+                <h3 class="tx-cen">To be continued...</h3>
             </div>
         </div>
-   
-</div>
+    </main>
+    <footer>
+        <div class="center">
+            <p style="padding:20px 0;">
+                Released under <a href="" class="link">MIT License</a> | Copyright © <a href="" class="link">Sunaipa</a>
+            </p>
+        </div>
+
+
+    </footer>
 </body>
-<script src="script.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/prism.js"></script>
 
 </html>
