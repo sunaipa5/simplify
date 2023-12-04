@@ -25,11 +25,19 @@ window.onload = function() {
     if (savedTheme === "dark") {
         body.classList.add("dark");
         body.classList.remove("light");
+        localStorage.setItem("theme", "dark");
         document.getElementById("dark").style.display = "none";
         document.getElementById("light").style.display = "block";
-    } else {
+    } else if(savedTheme === "light"){
         body.classList.add("light");
         body.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+        document.getElementById("dark").style.display = "block";
+        document.getElementById("light").style.display = "none";
+    } else if(!body.classList.contains("light") && !body.classList.contains("dark")){
+        body.classList.add("light");
+        body.classList.remove("dark");
+        localStorage.setItem("theme", "light");
         document.getElementById("dark").style.display = "block";
         document.getElementById("light").style.display = "none";
     }

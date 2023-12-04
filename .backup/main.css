@@ -5,29 +5,8 @@
         radial-gradient(circle at top left, #888, #999, transparent 440px, transparent 140px),
         radial-gradient(circle at bottom right, #888, #999, transparent 340px, transparent 140px);
     background-color: #f4f5f6;
-    animation: flowAnimationlight 10s linear infinite;
+   
 }
-
-@keyframes flowAnimationlight {
-    0% {
-        background-position: 0 0;
-        background-color: #f4f5f6;
-    }
-
-    50% {
-        background-position: 50% 50%;
-        background-color: #999;
-        color: #444;
-    }
-
-    100% {
-        background-position: 100% 100%;
-        background-color: #f4f5f6;
-    }
-}
-
-
-
 
 .dark .welcome {
 
