@@ -1,31 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-*{font-family:'Montserrat';}
-.light .welcome {
-    background:
-        radial-gradient(circle at top left, #888, #999, transparent 440px, transparent 140px),
-        radial-gradient(circle at bottom right, #888, #999, transparent 340px, transparent 140px);
-    background-color: #f4f5f6;
-   
+@font-face {
+  font-family: "Montserrat";
+  src: url("../styles/montserrat.woff2");
+}
+* {
+  font-family: 'Montserrat'
 }
 
-.dark .welcome {
 
-    background:
-        radial-gradient(circle at top left, #333, #222, transparent 440px, transparent 140px),
-        radial-gradient(circle at bottom right, #333, #222, transparent 340px, transparent 140px);
-    background-color: #111;
+
+.light .welcome {
+  background: radial-gradient(circle at top left, #888, #999, transparent 25%, transparent 30%),
+              radial-gradient(circle at bottom right, #888, #999, transparent 25%, transparent 30%);
+  background-color: #f4f5f6;
+  /*
+  animation: flowAnimationlight 10s linear infinite;
+  */
+}
+
+/*
+@keyframes flowAnimationlight {
+  0% {
+    background-size: 100% 100%, 100% 100%;
+  }
+
+  50% {
+    background-size: 500% 100%, 100% 100%;
+  }
+
+  100% {
+    background-size: 100% 100%, 100% 100%;
+  }
+}
+*/
+
+
+
+
+.dark .welcome {
+  background: radial-gradient(circle at top left, #333, #222, transparent 440px, transparent 140px), radial-gradient(circle at bottom right, #333, #222, transparent 340px, transparent 140px);
+  background-color: #111
 }
 
 .welcome {
-    background-repeat: no-repeat;
-    width: 100vw;
-    padding: 15rem 0px;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 5px;
-
+  background-repeat: no-repeat;
+  width: 100vw;
+  padding: 15rem 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5px
 }
 
 .weltext {
-    bottom: 0px;
+  bottom: 0;
+}
+
+
+
+
+
+pre::-webkit-scrollbar {
+  width: 4px;
+  height:4px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+ 
+pre::-webkit-scrollbar-thumb {
+  border-radius:10px;
+  background:#555;
+  
+}
+pre::-webkit-scrollbar-thumb:hover {
+  background:#777;
+  
+}
+
+pre::-webkit-scrollbar-corner{
+  background-color:transparent;
+  
+}
+.btbl {
+  background-color: black;
+}
+
+.btbl:hover {
+  background-color: #333;
+  transition: 0.5s;
 }

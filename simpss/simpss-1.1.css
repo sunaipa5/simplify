@@ -6,7 +6,7 @@
    https://github.com/sunaipa5
    Licensed under the MIT license
  */
-.preload * {
+ .preload * {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     -ms-transition: none !important;
