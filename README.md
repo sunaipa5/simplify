@@ -1,4 +1,4 @@
-# simpss
-The Simple CSS Framework
+# Simplify
+The Simplify CSS Framework
 <br>
-<a href="https://simpss.pages.dev" target="_blank">Visit Simpss Offical Website</a>
+<a href="https://simplify.pages.dev" target="_blank">Visit Simplify Offical Website</a>
